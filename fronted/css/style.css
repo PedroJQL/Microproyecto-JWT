@@ -1,0 +1,277 @@
+/* General Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Navigation Bar */
+.nav-bar {
+    width: 100%;
+    background: transparent; /* Sin tono en el nav-bar */
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 10;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    padding: 0 2rem;
+}
+
+.nav-bar nav ul {
+    list-style: none;
+    display: flex;
+    gap: 1.5rem;
+    margin-left: auto;
+}
+
+.nav-bar nav ul li {
+    display: inline;
+}
+
+.nav-bar nav ul li a {
+    text-decoration: none;
+    color: #ffffff; /* Color blanco por defecto */
+    font-size: 20px; /* Tamaño de texto aumentado */
+    font-weight: bold; /* Texto más grueso */
+    transition: color 0.2s ease, transform 0.2s ease; /* Añadido efecto de transformación */
+    padding: 0.5rem 0;
+}
+
+.nav-bar nav ul li a:hover {
+    color: #39ff14; /* Color verde neón */
+    transform: scale(1.1); /* Aumenta ligeramente el tamaño al pasar el ratón */
+}
+
+/* Background Image */
+.background-image {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('coban.jpg');
+    background-size: cover;
+    background-position: center;
+    z-index: -2;
+    animation: zoomAnimation 10s infinite alternate ease-in-out; /* Añadida animación de zoom */
+}
+
+/* Overlay for the bluish filter */
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 51, 102, 0.6); /* Azul oscuro con transparencia */
+    z-index: -1;
+}
+
+/* Zoom Animation */
+@keyframes zoomAnimation {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.05);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+/* Centering the form */
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    padding: 1rem;
+    padding-top: 6rem; /* Ajustado para la nav-bar */
+}
+
+/* Styling the form */
+.form-container {
+    background-color: #ffffff;
+    padding: 2rem;
+    border-radius: 4px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 400px;
+    border: 1px solid #e5e5e5;
+}
+
+/* Header */
+h2 {
+    text-align: center;
+    margin-bottom: 1.5rem;
+    font-size: 24px;
+    color: #333333;
+}
+
+/* Form Group */
+.form-group {
+    margin-bottom: 1.5rem;
+}
+
+/* Label Styles */
+label {
+    display: block;
+    margin-bottom: 0.5rem;
+    color: #333333;
+    font-weight: normal;
+}
+
+/* Input Styles */
+input[type="text"],
+input[type="password"] {
+    width: 100%;
+    padding: 0.75rem;
+    border: 1px solid #c8c8c8;
+    border-radius: 4px;
+    font-size: 14px;
+    outline: none;
+    background-color: #f9f9f9;
+}
+
+input[type="text"]:focus,
+input[type="password"]:focus {
+    border-color: #0078d4;
+    background-color: #ffffff;
+}
+
+/* Button Styles */
+.btn {
+    display: block;
+    width: 100%;
+    padding: 0.75rem;
+    background-color: #0078d4;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    font-size: 14px;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+}
+
+.btn:hover {
+    background-color: #005a9e;
+}
+
+
+/* Proud Message */
+.proud-message {
+    position: fixed;
+    right: 20px; /* Ajusta según sea necesario */
+    top: 20px; /* Ajusta según sea necesario */
+    font-size: 24px; /* Tamaño de fuente */
+    font-weight: bold; /* Texto más grueso */
+    color: white; /* Color blanco */
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.7); /* Sombra para destacar */
+    z-index: 10; /* Asegura que esté encima */
+}
+
+
+/* Registro de Usuario - Estilo CSS (ajustes adicionales opcionales) */
+
+/* Form Container */
+.form-container {
+    background-color: #ffffff;
+    padding: 2rem;
+    border-radius: 4px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 400px;
+    border: 1px solid #e5e5e5;
+}
+
+/* Header */
+h2 {
+    text-align: center;
+    margin-bottom: 1.5rem;
+    font-size: 24px;
+    color: #333333;
+}
+
+/* Form Group */
+.form-group {
+    margin-bottom: 1.5rem;
+}
+
+/* Label Styles */
+label {
+    display: block;
+    margin-bottom: 0.5rem;
+    color: #333333;
+    font-weight: normal;
+}
+
+/* Input Styles */
+input[type="text"],
+input[type="email"],
+input[type="password"],
+input[type="number"] {
+    width: 100%;
+    padding: 0.75rem;
+    border: 1px solid #c8c8c8;
+    border-radius: 4px;
+    font-size: 14px;
+    outline: none;
+    background-color: #f9f9f9;
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="password"]:focus,
+input[type="number"]:focus {
+    border-color: #0078d4;
+    background-color: #ffffff;
+}
+
+/* Button Styles */
+.btn {
+    display: block;
+    width: 100%;
+    padding: 0.75rem;
+    background-color: #0078d4; /* Azul */
+    color: white;
+    border: none;
+    border-radius: 4px;
+    font-size: 14px;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+}
+
+.btn:hover {
+    background-color: #005a9e; /* Color más oscuro al pasar el ratón */
+}
+
+/* Ajustes de márgenes */
+.container {
+    padding-top: 6rem; /* Mantener espacio para la nav-bar */
+}
+
+
+/* Clase para centrar todo en la pantalla */
+.full-screen {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center; /* Centra el contenedor horizontalmente */
+    align-items: center; /* Centra el contenedor verticalmente */
+    background-color: rgba(255, 255, 255, 0.9); /* Fondo blanco con algo de transparencia */
+}
+
+/* Ajuste para que el contenido esté centrado dentro del formulario */
+.form-container {
+    background-color: #ffffff;
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 400px;
+    text-align: center; /* Centra el contenido de texto */
+}

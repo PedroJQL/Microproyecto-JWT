@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/style.css">
+    <title>Cambiar Contraseña</title>
+    <style>
+        /* General Styles */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Arial', sans-serif;
+        }
+
+        /* Container */
+        .container{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            background: #f0f4f8;
+        }
+        
+
+        /* Card */
+        .card {
+            background: #ffffff;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            padding: 2rem;
+            width: 100%;
+            max-width: 400px;
+            text-align: center;
+        }
+
+        .card h2 {
+            margin-bottom: 1rem;
+            font-size: 24px;
+            color: #333;
+        }
+
+        .card input {
+            width: 100%;
+            padding: 0.75rem;
+            margin-bottom: 1rem;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            font-size: 16px;
+        }
+
+        .card button {
+            width: 100%;
+            padding: 0.75rem;
+            background-color: #0078d4;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            font-size: 16px;
+            cursor: pointer;
+            transition: background-color 0.3s ease, transform 0.3s ease;
+        }
+
+        .card button:hover {
+            background-color: #005a9e;
+            transform: scale(1.05);
+        }
+
+        .card button:active {
+            transform: scale(1);
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="card">
+            <h2>Cambiar Contraseña</h2>
+            <form id="changePasswordForm">
+                <input type="password" id="newPasswordInput" placeholder="Nueva contraseña" required>
+                <button type="submit">Cambiar Contraseña</button>
+            </form>
+        </div>
+    </div>
+    <script src="/js/changepwd.js"></script>
+</body>
+</html>
